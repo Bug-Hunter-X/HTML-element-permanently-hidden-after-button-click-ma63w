@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is initially visible.
+  </div>
+  <button onclick="myFunction()">Click Me</button>
+
+  <script>
+    function myFunction() {
+      document.getElementById("myDiv").style.display = "none"; // Hide the div
+      // Missing code to re-show the div after a certain time or condition, leading to permanent hiding.
+    }
+  </script>
+</body>
+</html>
